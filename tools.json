@@ -1,0 +1,23 @@
+[
+  {
+    "name": "jp_sesc_recommendations_search",
+    "description": "Search the Securities and Exchange Surveillance Commission of Japan (証券取引等監視委員会, SESC) recommendations that the Financial Services Agency order an administrative monetary penalty (課徴金納付命令勧告): disclosure-inspection cases (false statements in securities reports, by listed companies) and trading-investigation cases (market manipulation, deceptive schemes, insider trading). Returns firms only: the firm, the kind of violation, the recommendation date and the commission's press record; cases whose party is a person or unnamed are dropped and counted in skipped_possible_individuals. One fiscal year (April to March; default the current one; year=2025 is 令和7年度) and at most two requests per call; the answer states the period covered, and a year with no published page is reported as unread rather than as no cases. Query matches the title in Japanese (full/half width folded). list is all, disclosure or unfair_trading. Example: list=\"disclosure\", year=2025.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Japanese words matched against the recommendation title, such as a company name (ウイルコ). Optional."
+        },
+        "year": {
+          "type": "number",
+          "description": "Fiscal year starting in April, 2009 onward (2025 = 令和7年度, April 2025 to March 2026). Default: the current fiscal year."
+        },
+        "list": {
+          "type": "string",
+          "description": "all (default), disclosure (開示検査: reports with false statements) or unfair_trading (取引調査: manipulation, deception, insider trading)."
+        }
+      }
+    }
+  }
+]

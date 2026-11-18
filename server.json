@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/jp-sesc-recommendations",
+  "title": "Jp Sesc Recommendations",
+  "description": "jp-sesc-recommendations -- the Securities and Exchange Surveillance Commission (証券取引等監視委員会, SESC)…",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/jp-sesc-recommendations",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-jp-sesc-recommendations",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/jp-sesc-recommendations/mcp"
+    }
+  ]
+}

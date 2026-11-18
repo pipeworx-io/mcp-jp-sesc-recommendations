@@ -1,0 +1,33 @@
+{
+  "name": "@pipeworx/mcp-jp-sesc-recommendations",
+  "version": "0.1.0",
+  "description": "jp-sesc-recommendations -- the Securities and Exchange Surveillance Commission (証券取引等監視委員会, SESC) lists of its recommendations to the Commissioner of the Financial Services Agency to order an administrative monetary penalty (課徴金納付命令の勧告): disclosure-inspection cases (開示検査: false statements in…",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "mcp-jp-sesc-recommendations": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "jp-sesc-recommendations"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-jp-sesc-recommendations.git"
+  },
+  "mcpName": "io.github.pipeworx-io/jp-sesc-recommendations",
+  "pipeworx": {
+    "mode": "gateway",
+    "slug": "jp-sesc-recommendations",
+    "gatewaySlug": "jp-sesc-recommendations",
+    "sourceHash": "v1-2762c70183c712da03321ada04495cab50d860a9af5752101f840550100376b7",
+    "sourceCommit": "63eb9b1fe9f3b095b65c4d9ab981248c93e13326"
+  }
+}
